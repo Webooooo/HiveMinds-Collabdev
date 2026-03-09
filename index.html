@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Campus Hub | Login</title>
+  <link rel="stylesheet" href="Mylogin.css" />
 </head>
 <body>
-    We are HIVE MINDS.
+
+  <div class="login-container">
+    <div class="login-card">
+
+      <h1 class="app-title"><img src="\./asset/Wolves logo.jpg" alt="WLV logo" class="wlvlogo">
+        Live Campus Hub</h1>
+      <p class="tagline">Stay Connected on Campus.</p>
+
+      <form class="login-form" id="loginForm">
+  <div class="input-group">
+    <label for="email">School Email</label>
+    <input
+      type="email"
+      id="email"
+      placeholder="student@wlv.ac.uk"
+      required
+    />
+  </div>
+
+  <div class="input-group">
+    <label for="password">Password</label>
+    <div class="password-wrapper">
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        required
+      />
+      <span class="toggle-password">👁</span>
+    </div>
+  </div>
+
+ 
+  <p class="error-message"> </p>
+
+  <button type="submit" class="login-btn" id="loginBtn">
+    Sign In
+  </button>
+</form>
+
+      <a href="#" class="forgot-password">Forgot your password?</a>
+
+    </div>
+
+    <footer class="footer-text">
+      © 2026 Live Campus Hub
+    </footer>
+  </div>
+<script src="./login.js"></script>
 </body>
 </html>
