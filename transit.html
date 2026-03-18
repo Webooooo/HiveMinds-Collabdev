@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./transit.css" />
+  <title>Campus Travel & Transport | Live Campus Hub</title>
+</head>
+<body>
+
+  
+  <header class="page-header">
+    <h1>Campus Travel & Transport</h1>
+    <p class="page-caption">
+      Plan your journey between University of Wolverhampton campuses.
+    </p>
+  </header>
+
+
+  <section class="transit-container">
+
+    <h2 class="section-title">
+      <img src="./asset/bus.png" alt="Bus icon" class="route-icon">
+      Plan Your Journey
+    </h2>
+
+    <form class="transit-form" onsubmit="getTransport(event)">
+      <select id="from" required>
+        <option value="">From Campus</option>
+        <option value="City Campus, University of Wolverhampton">City Campus</option>
+        <option value="University of Wolverhampton Walsall Campus">Walsall Campus</option>
+        <option value="University of Wolverhampton Telford Campus">Telford Campus</option>
+      </select>
+
+      <select id="to" required>
+        <option value="">To Campus</option>
+        <option value="City Campus, University of Wolverhampton">City Campus</option>
+        <option value="University of Wolverhampton Walsall Campus">Walsall Campus</option>
+        <option value="University of Wolverhampton Telford Campus">Telford Campus</option>
+      </select>
+
+      <button type="submit" class="facility-btn">
+        Get Transit Info
+      </button>
+    </form>
+
+    <div class="transit-result">
+      <p><strong>Status:</strong> Waiting for route selection.</p>
+      <p><strong>Distance:</strong> —</p>
+      <p><strong>Estimated Time:</strong> —</p>
+      <p><strong>Transport:</strong> —</p>
+    </div>
+
+  </section>
+
+ 
+  <div class="back-container">
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+  </div>
+
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO6PAhNZmeWpVNpMG3puSjUVHXh2Ct830"></script>
+  <script src="./transit.js"></script>
+</body>
+</html>

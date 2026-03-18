@@ -1,2 +1,2 @@
-# HiveMinds-Collabdev
-a collarative project about engaging the student on  Campus.
+# HIVE-MINDS-
+Collaborative Development - 5CS024

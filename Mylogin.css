@@ -1,0 +1,173 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Page background with slideshow */
+body {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bgSlide 25s infinite ease-in-out;
+}
+
+/* Background image animation */
+@keyframes bgSlide {
+
+  0%{
+    background-image: url('./asset/harisson.jpeg');
+  }
+
+  33%{
+    background-image: url('./asset/ambquinn-grey-wolves-7416396_1280.jpg');
+  }
+
+  66%{
+    background-image: url('./asset/wolveshome.jpeg');
+  }
+
+  100%{
+    background-image: url('./asset/wolves1.jpg');
+  }
+
+}
+
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: transparent;
+}
+
+
+.login-card {
+  background: #F9F8F6;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+.app-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3c72;
+  margin-bottom: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+
+.login-form {
+  width: 100%;
+}
+
+
+.input-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #1e3c72;
+}
+
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.error-message {
+  min-height: 18px;
+  font-size: 13px;
+  color: #d93025;
+  margin-bottom: 10px;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1e3c72;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #16305a;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #1e3c72;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+
+.footer-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #eee;
+}
+
+.app-title img{
+  height: 20px;
+  width: auto;
+}

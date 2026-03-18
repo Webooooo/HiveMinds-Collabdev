@@ -1,0 +1,134 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+
+.page-header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  background-color: #16305a;
+  color: #ffffff;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.page-caption {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #f5b400;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+
+.facility-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 90px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 50px auto 30px;
+}
+
+
+.facility-card {
+  background-color: #16305a; /* Blue card */
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  color: #ffffff; /* All text inside card white */
+}
+
+.facility-card:hover {
+  background-color: #1d3e73;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+.facility-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+
+.facility-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+
+.facility-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #f5b400;
+  color: #16305a;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.facility-btn:hover {
+  background-color: #e0a800;
+  transform: translateY(-1px);
+}
+
+
+.back-container {
+  text-align: center;
+  margin: 30px 0 50px;
+}
+
+
+.route-icon {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+
+.gym-hours {
+  color: #ffffff;
+}
+
+.gym-hours ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.gym-hours li {
+  margin-bottom: 4px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #666;
+}
